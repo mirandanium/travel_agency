@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание 7</title>
+</head>
+<body>
+    <p><img id="largeImg" src="images2/sistema-1.jpg" title="Система спаси-себя-сам для главного злодея"></p>
+
+  <ul id="thumbs">
+    <!-- браузер показывает небольшую встроенную подсказку из атрибута "title" при наведении курсора на текст -->
+    <li>
+      <a href="images2/sistema-2.jpg" title="Система спаси-себя-сам для главного злодея"><img src="images2/sistema-2-thumb.jpg"></a>
+    </li>
+    <li>
+      <a href="images2/sistema-3.jpg" title="Система спаси-себя-сам для главного злодея"><img src="images2/sistema-3-thumb.jpg"></a>
+    </li>
+    <li>
+      <a href="images2/sistema-4.jpg" title="Система спаси-себя-сам для главного злодея"><img src="images2/sistema-4-thumb.jpg"></a>
+    </li>
+    <li>
+      <a href="images2/sistema-5.jpg" title="Система спаси-себя-сам для главного злодея"><img src="images2/sistema-5-thumb.jpg"></a>
+    </li>
+    <li>
+      <a href="images2/sistema-6.jpg" title="Система спаси-себя-сам для главного злодея"><img src="images2/sistema-6-thumb.jpg"></a>
+    </li>
+  </ul>
+<!-- Нужно добавить скрипт -->
+  <script>
+  // Вот тут
+  let thumbs = document.querySelector('#thumbs');
+
+  thumbs.onclick = function(e) {
+  let elem = e.target;
+  if (elem.tagName == "A" || elem.tagName == "IMG") {
+  let href = elem.closest("a").href;
+  largeImg.src = href;
+  event.preventDefault(); //Сброс гугл настроек
+}
+}
+  </script> 
+</body>
+</html>

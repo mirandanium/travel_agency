@@ -1,0 +1,57 @@
+.pic {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    background: url("img/bg.jpg");
+  }
+  
+  .item {
+    position: absolute;
+  }
+  
+  .planet-1 {
+    top: 30px;
+    left: 216px;
+    z-index: 1;
+  }
+  
+  .planet-2 {
+    top: 66px;
+    left: 74px;
+    z-index: 2;
+  }
+  
+  .planet-3 {
+    top: 155px;
+    left: 166px;
+    z-index: 3;
+  }
+  
+  .asteroid {
+    top: 119px;
+    left: 130px;
+    z-index: 4;
+  }
+  
+  .spaceship {
+    top: 120px;
+    left: 200px;
+    z-index: 4;
+  }
+  
+  .ufo {
+    top: 121px;
+    left: 60px;
+    z-index: 4;
+  }
+  button{
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    color: darkorange;
+    background-color: blanchedalmond;
+    border-radius: 100px;
+    top: 200px;
+    left: 250px;
+    z-index: 5;
+  }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4</title>
+</head>
+<body>
+    <input type ="text"> + <input type ="text"> = <span>?</span>
+    <p><input type="submit" value = "Нажмите чтобы сложить" onclick="func()"></p>
+    <script>
+        let func = function(){
+    let num = document.body.firstElementChild.value;
+    let num2 = document.body.children[1].value;
+    num = Number (num);
+    num2 = Number (num2);
+    span = document.body.children[2];
+    span.innerHTML = num + num2;
+ }
+ </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style8.css">
+    <title>Задание 8</title>
+</head>
+<body>
+    <div class="conteiner">
+        <h2>Прогресс-бар</h2>
+        <progress value="0" max="100" id="progress"></progress><span id="counter">0%.</span>
+       <p id="text"><button onclick = "func()" id="button">Увеличить значение</button></p> 
+    </div>
+    <script>
+let progress = document.getElementById('progress'),
+    button = document.getElementById('button'),
+    counter = document.getElementById('counter');
+    let func = function(){
+    button.style.backgroundColor = 'blue';
+    if(progress.value < 100){
+    progress.value += 5;
+    counter.innerHTML = progress.value+'%.';
+    } 
+    else{
+       let text = document.getElementById('text');
+       text.hidden = true;
+       counter.innerHTML = '100%. Максимум.'
+    }
+}
+    </script>
+</body>
+</html>

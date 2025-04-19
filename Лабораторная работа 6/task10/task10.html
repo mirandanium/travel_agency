@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style10.css">
+    <title>Задание 10</title>
+</head>
+<body>
+<div id="main">
+    <div id="conteiner">
+        <div class="machta" hidden></div>
+        <div class="parusleft"></div>
+        <div class="parusright"></div>
+        <button id="button">Отправить в работу</button>
+    </div>
+</div>
+</body>
+<script>
+    let button = document.getElementById('button');
+    main = document.getElementById('conteiner');
+    document.addEventListener("click", function(event){ 
+       button.innerHTML = 'Поплыли!';
+       button.style.borderBottomLeftRadius = '100px';
+       button.style.borderBottomRightRadius = '110px';
+       button.style.transitionDuration = '1s';
+       document.querySelector('.machta').hidden = false;
+       document.querySelector('.machta').classList.toggle("machta-active");
+       document.querySelector('.parusleft').classList.toggle("parus-active");
+       document.querySelector('.parusright').classList.toggle("parus-active");
+
+       setTimeout(function(){
+                main.style.left = "1500px";
+            },2100)
+    })
+
+</script>
+</html>

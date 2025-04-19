@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style9.css">
+    <title>Задание 9</title>
+</head>
+<body>
+    <div class="pic">
+        <img class="item  planet-1" src="img/planet-1.png" alt="planet-1" >
+        <img class="item  planet-2" src="img/planet-2.png" alt="planet-2">
+        <img class="item  planet-3" src="img/planet-3.png" alt="planet-3">
+        <img class="item  asteroid" src="img/asteroid.png" alt="asteroid" id="p1">
+        <img class="item  spaceship" src="img/spaceship.png" alt="spaceship" id="p2">
+        <img class="item  ufo" src="img/ufo.png" alt="ufo" id="p3">
+        <button id="button">Полетели!</button>
+      </div>
+      <script>
+                let button = document.querySelector("#button");
+        button.addEventListener("click", function(event){
+           setInterval(() => change(), 1000);
+        })
+        function change(){
+            let a = p1.src;
+            p1.src = p2.src;
+            p2.src = p3.src;
+            p3.src = a;
+        }
+      </script>
+</body>
+</html>

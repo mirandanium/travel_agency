@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+</head>
+<body>
+    <h2 class="pr">Заголовок с классом pr.</h2>
+    <p class="pr">Абзац с классом zzz.</p>
+    <p class="pr">Абзац с классом zzz.</p>
+    <p>Просто абзац, не поменяется.</p>
+    <input type="submit" value="Нажмите на меня!" onclick="func()">
+    <script>
+        let func = function(){
+    let p = document.querySelectorAll('.pr');
+    for ( let i = 0; i < p.length; i++){
+        let elem = p[i];
+        elem.innerHTML = i+1;
+    }
+ }
+    </script>
+</body>
+</html>
