@@ -1,0 +1,11 @@
+p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px;
+    width: 80%;
+    border: solid black 1px;
+}
+p:hover{
+   white-space: normal;
+}

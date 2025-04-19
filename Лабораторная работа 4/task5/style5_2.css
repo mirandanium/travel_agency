@@ -1,0 +1,37 @@
+.pi{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient( white, 	#1E90FF);
+    border: dimgrey solid 1px;
+    margin: 5px;
+    position: relative;
+}
+.tuc{
+    display: inline-block;
+    width: 450px;
+    height: 200px;
+    background: radial-gradient(white, 	#1E90FF);
+    margin: 5px;
+    border: dimgrey solid 1px;
+}
+
+.kar{
+    display: block;
+    width: 450px;
+    height: 200px;
+    margin: 5px;
+    border: dimgrey solid 1px;
+    background: radial-gradient( circle closest-side at 50px 50px, white, #1E90FF );
+    position: absolute;
+}
+.huh{
+    position: absolute;
+    display: block;
+    width: 450px;
+    height: 200px;
+    left: 470px;
+    margin: 5px;
+    border: dimgrey solid 1px;
+    background: radial-gradient(circle closest-side, black 15% ,white 30%,white 45%,green 60%);
+}

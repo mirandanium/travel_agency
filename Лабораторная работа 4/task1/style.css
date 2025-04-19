@@ -1,0 +1,21 @@
+textarea{
+    display:block;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+#both{
+resize: both;
+}
+
+#none{
+resize: none;
+}
+
+#horizontal{
+resize: horizontal;
+}
+
+#vertical{
+resize: vertical;
+}

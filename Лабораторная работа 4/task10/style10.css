@@ -1,0 +1,33 @@
+figure{
+display: inline-block;
+height: 240px;
+width: 500px;
+margin: 5px;
+}
+figcaption{
+    font-size: 15px;
+    padding: 5px;
+}
+img{
+ height: 200px;
+ width: 200px;
+ margin: 5px;
+}
+.grayscale{
+ filter: grayscale(100%);
+}
+.sepia{
+filter: sepia(100%);
+}
+.saturate{
+filter: saturate(50%);
+}
+.hue-rotate{
+filter: hue-rotate(90deg);
+}
+.invert{
+filter: invert(100%);
+}
+.contrast{
+filter: contrast(150%);
+}

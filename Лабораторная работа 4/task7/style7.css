@@ -1,0 +1,20 @@
+div{
+   width: 200px;
+   height: 200px;
+   margin: 70px;
+   border: 2px solid black;
+   display: block;
+}
+.block1{
+  position: relative;
+  box-shadow: 20px 30px 10px gray;
+}
+.block2{
+ position: absolute;
+ box-shadow: -20px -30px 10px gray, 20px 30px 10px gray;
+}
+.block3{
+ position: absolute;
+ top: 650px;
+ box-shadow: inset 5px 5px 10px gray;
+}
