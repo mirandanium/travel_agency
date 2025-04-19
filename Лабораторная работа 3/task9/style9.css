@@ -1,0 +1,143 @@
+/* Меняю начальные установки */
+*{
+    color: black;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Задаю фон страницы */
+body{
+    background-color: 	#DCDCDC;
+}
+/* создаю шапку сайта */
+header{
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color:	#20B2AA;
+   position: fixed;
+   font-size: 15px;
+   padding: 0;
+   height: 50px;
+   z-index: 2;
+}
+/* оформляю главную ссылку */
+.main {
+   background-color: gray;
+   margin-left: 0;
+   margin-top: 0;
+   height: 50px;
+   width: 120px;
+   text-align: center;
+   padding-top: 15px;
+   padding-left: 2px;
+}
+/* оформление навигации */
+li{
+    display: inline-block;
+    list-style: none;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    padding: 4px;
+    margin: 5px;
+}
+/* оформление текста навигации */
+.ssylka{
+    text-decoration: none;
+    color: aliceblue;
+}
+/* блок для  текста*/
+article {
+    background-color: white;
+    height: 2200px;
+    left: 0;
+    right: 0;
+    margin-top: 80px;
+    position: relative;
+}
+/* текст слева */
+#section{ 
+    width: 300px;
+    margin-top: 0;
+    margin-left: 0;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    text-align: justify;
+    padding: 25px;
+    font-size: 15px;
+}
+/* текст в середине */
+#content{
+    margin-left: 0;
+    margin-right: 0;
+    left: 300px;
+    right: 300px;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    font-size: 20px;
+    text-align: justify;
+    padding: 25px;
+}
+/* текст справа */
+#aside{
+    width: 300px;
+    margin-top: 0;
+    right: 0;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    text-align: justify;
+    padding: 25px;
+    font-size: 15px;
+}
+/* отступы в тексте */
+.text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* подвал */
+footer{
+    top: 2000px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    left: 0;
+    right: 0;
+    background-color:	#20B2AA;
+    height: 400px;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center; 
+}
+/* блоки подвала */
+#block1, #block2, #block3, #block4{
+    width: 350px;
+    height: 280px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    font-size: 15px;
+    padding: 20px;
+}
+/* расположение блоков подвала */
+#items{ 
+    display: flex;
+    justify-content: space-between;
+}
+/* линия */
+hr {
+    border: none;
+    background-color: gray; 
+    height: 2px; 
+}
+/* отступы в блоках с текстом подвала */
+.tyk{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* настройки для картинок */
+img{
+    z-index: 1;
+}

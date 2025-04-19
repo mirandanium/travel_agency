@@ -1,0 +1,32 @@
+*{
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    width: 900px;
+    height: 200px;
+    border: 1px solid black;
+}
+#content{
+    width: 700px;
+    height: 500px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border: 1px solid black;
+    display: inline-block;
+}
+#sidebar{
+    width: 200px;
+    height: 500px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 0px;
+}
+footer{
+   width: 900px;
+   height: 200px;
+   margin-top: 0px;
+   border: 1px solid black;
+}

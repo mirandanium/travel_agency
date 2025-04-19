@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.spisok {
+  position: relative;
+}
+
+.spisok:hover > .luk {
+  display: block;
+}
+
+.ssylka {
+  display: block;
+  padding: 8px 16px;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+}
+
+.ssylka:hover {
+  background-color: #333;
+}
+
+.luk {
+  display: none;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.pip {
+  display: block;
+  padding: 8px 16px;
+  background-color: #333;  
+  color: #fff;
+  text-decoration: none;
+}
+
+.pip:hover {
+  background-color: #444;
+}
